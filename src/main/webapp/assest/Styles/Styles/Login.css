@@ -1,0 +1,380 @@
+:root {
+    --Orange: #F3A94D;
+    --Black: #000000;
+    --grey: #837f7f;
+    --footerup: #181c19;
+    --white: #fff7f7;
+    --blue: #0057D9;
+    --base: #ff8c00;
+    --trans: #503b3a;
+
+    --brown: #492000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+html,
+body {
+    background-color: #845ec2;
+}
+
+.loginpage-first {
+    background-color: #845ec2;
+}
+
+@media (min-width:700px) {
+    .loginpage-first {
+        width: 100%;
+        margin: auto;
+    }
+
+    .loginpage-firstmain {
+        display: flex;
+        flex-direction: column;
+        margin: 200px auto;
+
+        height: 450px;
+        width: 600px;
+        background-color: #77d2ae;
+        border-radius: 30px;
+
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+
+
+
+    .loginpage-mini {
+        display: flex;
+        margin: 10px auto;
+
+    }
+
+    .flex-one {
+        display: flex;
+
+    }
+
+    .flex-two {
+        display: flex;
+
+    }
+
+    .loginpages-flexrow-second {
+        width: 300;
+        height: 500;
+        margin-top: -14px;
+        margin-left: 42px;
+
+    }
+
+    .loginpages-flexrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 30px;
+        padding-right: 27px;
+        border-right: solid 2px var(--brown);
+    }
+
+    .img-logo {
+        height: 60px;
+        width: 130px;
+        margin-left: 250px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+    }
+
+
+
+    .button-first {
+        padding: 9px 41px;
+        background-color: #ff8c00;
+        width: 100%;
+        margin: 0px auto;
+
+    }
+
+
+
+
+
+    .par1 {
+        font-size: 16px;
+        font-style: bold;
+        margin-top: 12px;
+        margin-left: 1em;
+
+    }
+
+    .par1,
+    p a {
+        color: rgb(0, 0, 0);
+    }
+
+    button a {
+        color: black;
+        font-weight: 700;
+    }
+
+
+
+    #password {
+        border-radius: 6px;
+
+        height: 22px;
+        margin-top: 7px;
+    }
+
+    #email {
+        border-radius: 6px;
+
+        height: 22px;
+        margin-top: 7px;
+    }
+
+    .head2 {
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn-green {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #ff8c00;
+        border: 1px solid black;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .first-img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .term {
+        color: white;
+        margin-top: 23px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .ter {
+        text-align: center;
+    }
+
+    .forgot {
+        text-align: center;
+        margin-top: 12px;
+        color: rgb(0, 0, 0);
+    }
+}
+
+/* for mobile */
+
+@media (max-width:700px) {
+    .loginpage-first {
+        width: 100%;
+        margin: auto;
+    }
+
+    .loginpage-firstmain {
+        display: flex;
+        flex-direction: column;
+        margin: 200px auto;
+
+        height: 650px;
+        width: 350px;
+        background-color: #77d2ae;
+        border-radius: 30px;
+
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+
+
+
+    .loginpage-mini {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10px auto;
+    }
+
+    .flex-one {
+        display: flex;
+
+    }
+
+    .flex-two {
+        display: flex;
+        padding-bottom: 2em;
+
+
+    }
+
+    .loginpages-flexrow-second {
+        width: 300;
+        height: 500;
+        margin-top: -14px;
+        margin-left: 42px;
+
+    }
+
+    .loginpages-flexrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 30px;
+        padding-right: 27px;
+
+    }
+
+    .img-logo {
+        height: 60px;
+        width: 130px;
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+    .button-first {
+        padding: 9px 41px;
+        background-color: #ff8c00;
+        width: 100%;
+        margin: 0px auto;
+
+    }
+
+
+
+
+
+    .par1 {
+        font-size: 16px;
+        font-style: bold;
+        margin-top: 12px;
+        margin-left: 1em;
+
+    }
+
+    .par1,
+    p a {
+        color: white;
+    }
+
+    button a {
+        color: black;
+        font-weight: 700;
+    }
+
+
+
+    #password {
+        border-radius: 6px;
+        height: 22px;
+        margin-top: 7px;
+    }
+
+    .head2 {
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn-green {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #ff8c00;
+        border: 1px solid black;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .first-img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .term {
+        color: white;
+        margin-top: 23px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .forgot {
+        text-align: center;
+        margin-top: 12px;
+        color: skyblue;
+    }
+}
+
+
+
+
+/* terms and conditions */
+.terms-and-condition {
+    margin: 0px;
+    text-decoration: none;
+    color: white;
+}
+
+.register {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 1100px;
+    width: 500px;
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #00C9A7;
+    border-radius: 3em;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #845EC2;
+}
+
+.term {
+    padding: 20px 20px;
+
+}
+
+#term {
+    padding: 20px 0px;
+    color: black var(--Black);
+    text-align: center;
+}
+
+.btn-term {
+    padding: 12px 12px;
+    background-color: orange;
+
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    margin: 0px 200px;
+    cursor: pointer;
+
+}
+
+.btn-term a {
+    color: black;
+    font-weight: 600;
+}

@@ -1,0 +1,149 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+  * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+
+
+  }
+
+  button {
+      cursor: pointer;
+  }
+
+  body {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/assest/images/Images/Banner Image/my background.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 873px;
+  }
+
+  #HoleCard {
+      display: flex;
+      flex-direction: row;
+      height: 25em;
+      width: 52em;
+      border: 0.09px rgb(255, 242, 0) solid;
+      border-radius: 2em;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      margin: 6em auto;
+
+
+  }
+
+  #HoleCard #ImageContainer img {
+      height: 24.89em;
+      width: 27em;
+      border-radius: 2em;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      margin-left: 0px;
+  }
+
+
+  #form_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      row-gap: 1em;
+      margin: 3em 2em;
+
+
+  }
+
+  #form_container input {
+      border-radius: 2px;
+      height: 30px;
+      width: 300px;
+      fill: none;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid grey;
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: yellow;
+
+  }
+
+
+
+  input::placeholder {
+      margin-left: 30px;
+      color: yellow;
+      font-size: 12px;
+  }
+
+  select {
+      border-radius: 2px;
+      height: 30px;
+      width: 300px;
+      fill: none;
+      color: yellow;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid grey;
+      font-size: 12px;
+      margin-bottom: 16px;
+  }
+
+  option {
+      font-size: 12px;
+      color: black;
+      background-color: yellow;
+  }
+
+  h2 {
+      color: white;
+
+  }
+
+  h2 span {
+      color: yellow;
+  }
+
+  button {
+      background: rgb(242, 255, 0);
+      color: black;
+      height: 40px
+  }
+
+  #form_container input:valid {
+      border-bottom: 1px solid green;
+
+  }
+
+  #form_container input:invalid {
+      border-bottom: 1px solid red;
+  }
+
+  small {
+      color: white;
+      text-align: center;
+  }
+
+  small span a {
+      color: skyblue;
+      cursor: pointer;
+  }
+
+  .menu .logo a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+      filter: blur(0.2px);
+      margin-left: 15px;
+  }
+
+  .menu .logo a span {
+      text-decoration: none;
+      color: #ffff05;
+      font-size: 35px;
+      font-weight: 600;
+  }
+
+  .menu {
+      margin-top: 25px;
+  }

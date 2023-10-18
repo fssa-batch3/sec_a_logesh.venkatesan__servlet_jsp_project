@@ -1,0 +1,185 @@
+/* create login */
+:root {
+    --Orange: #F3A94D;
+    --Black: #000000;
+    --grey: #837f7f;
+    --footerup: #181c19;
+    --white: #fff7f7;
+    --blue: #0057D9;
+    --base: #ff8c00;
+    --trans: #503b3a;
+    --chat: #00C9A7;
+    --room: #845EC2;
+    --brown: #492000;
+    --redishorange: #FF5349;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: #845ec2;
+}
+
+::selection {
+    background-color: aliceblue;
+    color: black;
+}
+
+* {
+    text-decoration: none;
+    margin: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button-first {
+    padding: 9px 41px;
+    background-color: #ff8c00;
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+.loginpage-firstmain {
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    margin-left: 450px;
+    height: 450px;
+    width: 600px;
+    border-radius: 30px;
+    background-color: #77d2ae;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+.loginpage-mini {
+    display: flex;
+    margin: 10px auto;
+}
+
+.flex-one {
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+
+
+
+.loginpages-flexrow-second {
+    width: 300;
+    height: 500;
+    margin-top: -30px;
+    margin-left: 42px;
+
+}
+
+.loginpages-flexrow {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly;*/
+    margin-left: 30px;
+    padding-right: 27px;
+    border-right: 2px solid rgb(207, 196, 196);
+    margin-bottom: 30px;
+}
+
+.img-logo {
+    height: 60px;
+    width: 220px;
+    margin-left: 200px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+}
+
+button a {
+    color: black;
+}
+
+
+
+.button-first {
+    padding: 9px 21px;
+    background-color: #ff8c00;
+    border-color: #000000;
+    border-radius: 40px;
+    margin: 0px 19px;
+    color: black;
+
+}
+
+.button-second {
+    padding: 9px 21px;
+    background-color: #ff8c00;
+    border-color: #000000;
+    border-radius: 40px;
+    color: black;
+
+
+}
+
+
+
+.par1 {
+    font-size: 16px;
+    font-style: bold;
+    margin-top: 12px;
+
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+
+
+.head2 {
+    font-size: 30px;
+    color: rgb(13, 3, 3);
+
+}
+
+.btn-green {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ff8c00;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.first-img {
+    height: 40px;
+    width: 40px;
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-btn-primary {
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: var(--base);
+    color: black;
+    border: none;
+}
+
+.form-check-label {
+    margin-top: 10px;
+    color: var(--black);
+    font-size: 19px;
+    margin-left: -2px;
+}
+
+.form-control {
+    border-radius: 30px;
+    height: 19px;
+}

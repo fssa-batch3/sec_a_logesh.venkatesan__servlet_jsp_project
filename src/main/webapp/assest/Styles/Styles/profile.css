@@ -1,0 +1,167 @@
+button.post {
+    position: fixed;
+    bottom: 3em;
+    right: 5em;
+    padding: 1em 2em;
+    border-radius: 2rem;
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+button img.post {
+    margin-top: 15px;
+}
+
+/* post are starts here */
+
+#post-section {
+    background-color: #d8d8d8;
+    height: 40em;
+    width: 50em;
+    margin-left: 5em;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#solo-post {
+
+    height: 40em;
+    width: 50em;
+    margin-left: 6em;
+    padding-top: 3em;
+}
+
+#solo-post #profile-post {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+#solo-post #profile-post h2 {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+#solo-post #profile-post img {
+    border-radius: 17px;
+    height: 35px;
+    width: 35px;
+    margin-left: 2em;
+
+}
+
+#solo-post video {
+    height: 30em;
+    width: 45em;
+    margin-left: 2em;
+    border-radius: 1em;
+}
+
+#solo-post h2#discription_title {
+    margin-left: 2em;
+    margin-top: 0em;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#solo-post p#description {
+    margin-left: 2.5em;
+    margin-top: 0em;
+    font-size: 16px;
+    font-weight: 400;
+    width: 30em;
+
+}
+
+#home {
+    background-color: rgb(127, 127, 127);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    margin-right: auto;
+    border: 2px solid yellow;
+    position: fixed;
+    height: 15em;
+    width: 52em;
+    border-bottom-left-radius: 7em;
+    border-top-left-radius: 7em;
+    margin-left: 23em;
+    margin-top: 3em;
+}
+
+#home button {
+    padding: 0.5em 1.13em;
+    background-color: yellow;
+    border: none;
+    border-radius: 2em;
+    margin-top: 2em;
+    margin-left: 6em;
+    font-size: 14px;
+}
+
+/* #home img {
+  height: 92%;
+    width: 25em;
+    border-radius: 23em;
+    margin-top: 0.7em;
+    margin-left: 0.4em;
+} */
+.main-flex{
+	display: flex;
+	flex-direction: row;
+	
+}
+#home {
+    display: flex;
+}
+
+#contentprof {
+    width: 100%;
+}
+
+#div {
+    display: flex;
+    margin-left: 2em;
+    padding-top: 1.5em;
+    gap: 3em;
+}
+
+#home #contentprof .title {
+    color: yellow;
+    font-size: 0.5em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive, sans-serif;
+}
+
+#home #contentprof .title span {
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive, sans-serif;
+}
+
+#home #contentprof {
+    margin-top: 0em;
+    gap: 20px;
+}
+
+#div .key {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Dancing Script', cursive, sans-serif;
+}
+
+#div .value {
+    color: yellow;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Dancing Script', cursive, sans-serif;
+}

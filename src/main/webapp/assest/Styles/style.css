@@ -1,0 +1,191 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  ::selection {
+      color: #000;
+      background: #fff;
+  }
+
+  body {
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      /* justify-content: center;
+        align-items: center; */
+      min-height: 100vh;
+  }
+
+  .center .title,
+  .sub_title {
+      text-decoration: none;
+      color: inherit;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+
+      font-family: Hack, sans-serif;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #ffff00, #cfe039, #ffff39);
+      letter-spacing: 5px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: shine 9s linear;
+      position: relative;
+  }
+
+
+
+  @keyframes shine {
+      0% {
+          background-position-x: -500%;
+      }
+
+      50% {
+          background-position-x: 200%;
+      }
+
+      100% {
+          background-position-x: 500%;
+      }
+  }
+
+  /*  Checkout my other pens on  https://codepen.io/grohit/  */
+
+
+  nav {
+      position: fixed;
+      background: blur;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 12;
+  }
+
+  nav .menu {
+      max-width: 1250px;
+      margin: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+  }
+
+  .menu .logo a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 35px;
+      font-weight: 600;
+      filter: blur(0.2px);
+  }
+
+  .menu .logo a span {
+      text-decoration: none;
+      color: #ffff05;
+      font-size: 35px;
+      font-weight: 600;
+  }
+
+
+
+
+
+
+
+
+
+  .center {
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+
+  }
+
+  .center .title {
+      color: #fff;
+      font-size: 55px;
+      font-weight: 600;
+  }
+
+  .center .sub_title {
+      color: #fff;
+      font-size: 52px;
+      font-weight: 600;
+  }
+
+  .center .btns {
+      margin-top: 20px;
+  }
+
+  .btns select {
+      height: 55px;
+      width: 170px;
+      border-radius: 5px;
+      border: none;
+      margin: 0 10px;
+
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0 10px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+  }
+
+  .btns select option {
+      height: 55px;
+      width: 170px;
+      border-radius: 5px;
+      border: 1px solid yellow;
+      margin: 0 10px;
+      color: rgb(0, 0, 0);
+      background-color: yellow;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0 10px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+  }
+
+  .center .btns button {
+      height: 55px;
+      width: 170px;
+      border-radius: 5px;
+      border: none;
+      margin: 0 10px;
+
+      font-size: 20px;
+      font-weight: 500;
+      padding: 0 10px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+  }
+
+  .center .btns button:first-child {
+      color: #fff;
+      background: none;
+  }
+
+  .btns button:first-child:hover {
+      background: white;
+      color: black;
+  }
+
+  .center .btns button:last-child {
+      background: rgb(242, 255, 0);
+      color: black;
+  }

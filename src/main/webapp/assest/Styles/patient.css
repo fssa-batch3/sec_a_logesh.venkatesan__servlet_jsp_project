@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    margin-left: 0px;
+    padding-left: 0px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&family=Lobster&family=Open+Sans&family=Outfit:wght@500&family=Rajdhani:wght@300&family=Rubik+Gemstones&display=swap');
+
+button {
+    cursor: pointer;
+}
+
+
+:root {
+    --Orange: #F3A94D;
+    --Black: #000000;
+    --grey: #837f7f;
+    --footerup: #181c19;
+    --white: #fff7f7;
+    --blue: #0057D9;
+    --base: #ff8c00;
+    --trans: #503b3a;
+    --chat: #00C9A7;
+    --room: #845EC2;
+    --brown: #492000;
+    --redishorange: #FF5349;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card {
+    height: 25em;
+    width: 17em;
+    background-color: rgb(179, 179, 179);
+    border-radius: 2em;
+    border: 1px rgb(255, 242, 0) solid;
+    margin-top: 3em;
+    margin-left: 4em;
+
+}
+
+.card img {
+    padding-top: 3px;
+    height: 17em;
+    width: 16.76em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.card h2 {
+    padding-top: 0.5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+.card h3 {
+    padding-top: 0.5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 90%;
+}
+
+.card button {
+    padding: 0.6em 4em;
+    margin-top: 1em;
+    border-radius: 1em;
+    border: 1px rgb(1, 1, 0) solid;
+
+    margin-left: 4.5em;
+    background-color: yellow;
+}
+
+#h1header {
+    padding-top: 0.5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(133, 133, 0);
+    font-size: 3em;
+
+}
+
+#h1headerspan {
+    padding-top: 0.5em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+#cardcon {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    padding-top: 2em;
+}

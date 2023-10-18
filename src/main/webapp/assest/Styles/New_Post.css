@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.containerOfHole {
+    display: flex;
+    height: 40em;
+    width: 60em;
+
+    border-radius: 3em;
+    background-color: rgb(211, 209, 209);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 5.6em auto;
+    border: 1px solid yellow;
+    /* border: 3px solid rgb(192, 185, 0); */
+}
+
+#prev,
+#imgPrev {
+    height: 35em;
+    width: 33em;
+    margin-top: 1em;
+    margin-left: 1em;
+    border-radius: 3em;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+        url("/assest/images/Images/Banner Image/Post\ bg.webp");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.containerOfHole h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(203, 200, 0);
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+div.containerOfHole h1 span {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+}
+
+div.containerOfHole input {
+    border: none;
+
+    height: 3em;
+    width: 25em;
+    margin: 20px;
+    border-radius: 1em;
+    border-bottom: 2px solid rgb(188, 188, 1);
+    border-right: 2px solid rgb(201, 201, 0);
+    background-color: rgb(246, 245, 238);
+    max-width: 60%;
+
+}
+
+div.containerOfHole input::placeholder {
+    padding: 12px;
+}
+
+div.containerOfHole form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9em;
+
+
+}
+
+div.containerOfHole form button {
+    height: 30px;
+    width: 12em;
+    margin: 12px auto;
+    background-color: rgb(246, 255, 0);
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+form.containerOfMini {
+    height: 40em;
+    width: 30em;
+    /* background-color: rgb(230, 241, 18); */
+    margin-top: 9em;
+    margin-left: 1em;
+}
+
+#frm {
+
+    margin-left: 5em;
+}

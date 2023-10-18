@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: "Open Sans",
+        -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu, Cantarell", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Bangers', cursive, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: darkorange;
+    text-align: center;
+    font-stretch: extra-condensed;
+}
+
+h1 span {
+    font-family: 'Bangers', cursive, sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    color: rgb(0, 0, 0)
+}
+
+.main-parent {
+    width: 100%;
+    height: 56.2em;
+    background-image: url("/assest/images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.editbtn,
+.detailsbtn {
+    padding: 8px 20px;
+    margin: 0px auto;
+    background-color: coral;
+
+}
+
+.editbtn {
+    margin-left: 7em;
+}
+
+.containerOfMini {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+
+.containerOfMini input {
+    width: 19em;
+    height: 2em;
+    padding: 1em;
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.3em;
+}
+
+.containerOfMini select {
+    margin: 0.5em;
+    outline: 1;
+    color: rgb(137, 136, 136);
+    width: 19em;
+    padding: 5px;
+    border-radius: 1px;
+}
+
+.containerOfMini button {
+    padding: 0.3em;
+    margin-top: 1em;
+    background-color: orange;
+    border: none;
+
+    border-radius: 5px;
+    font-family: 'Bangers', cursive, sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    color: rgb(0, 0, 0);
+
+    display: block;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+input:valid {
+    border: solid 2px greenyellow;
+}
+
+input:invalid {
+    border: solid 2px red;
+}
+
+input::placeholder {
+    color: rgb(167, 151, 151);
+    font-size: 12px;
+}
