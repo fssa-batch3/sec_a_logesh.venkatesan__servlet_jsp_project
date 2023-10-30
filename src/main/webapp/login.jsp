@@ -46,7 +46,7 @@ body {
 				</h2>
 				<input type="email" value="Murugha@gmail.com"
 					placeholder="Enter Your Email" id="email" name="email" required>
-				<input type="password" name="password" value="Murugha@1234"
+				<input type="password" name="password" value="@Veeramuthu12"
 					placeholder="Enter Password" id="password" required>
 
 				<button>Login Now</button>

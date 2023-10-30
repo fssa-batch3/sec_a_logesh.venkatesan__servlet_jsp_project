@@ -39,9 +39,10 @@ public class RegistrationServlet extends HttpServlet {
 		try {
 			userService.registerUser(user);
 			String email = request.getParameter("email");
+			System.out.println("Registered User email : "+email);
 			HttpSession session = request.getSession();
 			session.setAttribute(SessionConstants.LOGGED_IN_EMAIL, email);
-			request.getRequestDispatcher("/home").forward(request, response);
+			response.sendRedirect(request.getContextPath()+"/home");
 		} catch (ServiceException e) {
 			e.printStackTrace();
 			response.sendRedirect(request.getContextPath() + "/Error.jsp?errorMessage=" + e.getMessage());

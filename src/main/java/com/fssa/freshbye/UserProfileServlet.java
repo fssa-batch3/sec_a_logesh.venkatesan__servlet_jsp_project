@@ -19,16 +19,17 @@ public class UserProfileServlet extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		String userEmail = (String) session.getAttribute(SessionConstants.LOGGED_IN_EMAIL);
+		System.out.print(userEmail);
 		UserService userService = new UserService();
 
 		try {
 			User userProfile = userService.getUserProfile(userEmail);
-			System.out.println(userProfile);
+			System.out.println("Userm profile"+userProfile);
 			if (userProfile != null) {
 			session.setAttribute("userProfile", userProfile);
 
 				
-				System.out.println(userProfile);
+		
 				request.getRequestDispatcher("/profile.jsp").forward(request, response);
 			} else {
 				response.sendError(HttpServletResponse.SC_NOT_FOUND, "User profile not found");

@@ -20,7 +20,7 @@
 	</div>
 	<div id="HoleCard">
 		<div id="ImageContainer">
-			<img src="<%=request.getContextPath()%>/assest/images/Editprofile.jpg" alt="DoctorImg"
+			<img src="${userProfile}" alt="UserImg"
 				id="LoginImg">
 		</div>
 		<div id="form">
@@ -32,7 +32,7 @@
 					title="User Must Fill All Credential" placeholder="Enter User Name"
 					pattern="[A-Za-z]{3,32}" required> <input type="url"
 					name="UserProfile" title="User Must Fill All Credential"
-					id="Profile" placeholder="Enter profile URL" value="" required> <input
+					id="Profile" placeholder="Enter profile URL" value="${userProfile}" required> <input
 					type="tel" name="UserMobile" placeholder="Enter Your Mobile Number " value="${userMobile}"
 					title="User Must Fill All Credential" 
                     id="number" pattern="^\[789]\d{9}$"
@@ -41,7 +41,7 @@
 
 				<button id="edited">Save</button>
 				<small id="createacc">I want to<span><a
-						href="/assest/pages/profile.html"> Go Back</a></span></small>
+						href="<%=request.getContextPath()%>/UserProfile"> Go Back</a></span></small>
 			</form>
 		</div>
 	</div>

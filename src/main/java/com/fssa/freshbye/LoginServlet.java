@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+System.out.println("Login page Reached..");
 		String email = request.getParameter("email");
 		String Password = request.getParameter("password");
 		User user1 = new User();
@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
 			response.sendRedirect(request.getContextPath()+"/home");
 		} catch (ServiceException e) {
 			e.printStackTrace();
-			response.sendRedirect(request.getContextPath()+"/login?errorMessage=" + e.getMessage());
+			response.sendRedirect(request.getContextPath()+"/login.jsp?errorMessage=" + e.getMessage());
 		}
 	}
 }

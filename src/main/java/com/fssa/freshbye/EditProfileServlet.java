@@ -22,11 +22,13 @@ public class EditProfileServlet extends HttpServlet {
         if (userProfile != null) {
             String userName = userProfile.getUsername();
             String userMobile = userProfile.getMobileno();
+            String profileImgUrl =userProfile.getProfileImage();
 String Password = userProfile.getPassword();
 System.out.println("Here is your User password is "+Password);
             try {
             	 request.setAttribute("userName", userName);
                  request.setAttribute("userMobile", userMobile);
+                 request.setAttribute("userProfile", profileImgUrl);
                  session.setAttribute("Password", Password);
 				request.getRequestDispatcher("/editProfile.jsp").forward(request, response);
 			} catch (ServletException e) {

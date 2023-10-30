@@ -25,7 +25,7 @@ public class LogoutServlet extends HttpServlet {
 		}
 
 		String email = (String) session.getAttribute(SessionConstants.LOGGED_IN_EMAIL);
-		System.out.println("User ID is " + email);
+		System.out.println("User ID is " + " "+email);
 
 		try {
 			int userId = UserService.getIdByEmailService(email);

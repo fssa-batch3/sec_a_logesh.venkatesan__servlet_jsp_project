@@ -23,9 +23,10 @@ public class HomeServlet extends HttpServlet {
 	Logger logger = new Logger();
 	private static final long serialVersionUID = 1L;
 	private PostService postService = new PostService();
+	
 
 	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
 			HttpSession session = request.getSession();
@@ -44,10 +45,11 @@ public class HomeServlet extends HttpServlet {
 
 			// Add posts to request attributes
 			request.setAttribute("posts", posts);
-
+			
 			// Forward the request to home.jsp
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/Home.jsp");
 			dispatcher.forward(request, response);
+		
 
 		} catch (ServiceException e) {
 			e.printStackTrace();

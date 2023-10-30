@@ -234,7 +234,7 @@
 
 
  .sidebar li a:hover .icon {
-     color: var(--sidebar-color);
+     color: black
  }
 
  body.dark .sidebar li a img {
@@ -243,8 +243,9 @@
 
  body.dark .sidebar li a:hover .icon,
  body.dark .sidebar li a:hover .text {
-     color: brown;
+     color: yellow;
  }
+
 
  .sidebar .menu-bar {
      height: calc(100% - 55px);
@@ -325,12 +326,14 @@
  }
 
  .Home {
-     position: relative;
+    
      top: 0;
-
+margin:auto;
+display:flex;
+flex-direction:column;
      left: 0px;
      height: 100vh;
-     width: 20em;
+     width: 80%;
      background-color: var(--body-color);
      transition: var(--tran-05);
  }
@@ -378,12 +381,12 @@
 
  #solo-post {
 
-     height: 40em;
-     width: 50em;
-     margin-left: 3em;
-     margin-bottom:5em;
-     padding-top: 3em;
- }
+      padding: 3px;
+    margin-bottom: 3em;
+    display: flex;
+    padding-top: 3em;
+    gap: 1rem;
+    flex-direction: column;}
 
  #solo-post #profile-post {
      display: flex;
@@ -401,31 +404,57 @@
      border-radius: 17px;
      height: 35px;
      width: 35px;
-     margin-left: 2em;
+     margin-left: 0em;
 
  }
 
  #solo-post .profile-post {
      height: 30em;
      width: 45em;
-     margin-left: 2em;
+     margin-left: 0em;
      border-radius: 1em;
  }
 
  #solo-post h2#discription_title {
-     margin-left: 2em;
-     margin-top: 0em;
-     font-size: 20px;
-     font-weight: 600;
+        margin-left: 0.4em;
+    margin-top: 0em;
+    font-size: 32px;
+    font-weight: 800;
  }
 
  #solo-post p#description {
-     margin-left: 2.5em;
+     margin-left: 0.5em;
      margin-top: 0em;
+     color:black;
      font-size: 16px;
      font-weight: 400;
      width: 30em;
  }
+
+.dark #solo-post #profile-post h2 {
+    color: white;
+}
+
+.dark #solo-post h2#discription_title {
+    color: white;
+}
+
+.dark #solo-post p#description {
+	color:white;
+}
+
+.dark #solo-post #profile-post h2:hover {
+    color: yellow;
+}
+
+.dark #solo-post h2#discription_title:hover {
+    color: yellow;
+}
+
+.dark #solo-post p#description:hover {
+	color:yellow;
+}
+
 
  .comment {
 
@@ -532,7 +561,7 @@
  }
 
  #title {
-     margin-left: 1em;
+     margin-left: 3em;
      margin-top: 1em;
  }
 

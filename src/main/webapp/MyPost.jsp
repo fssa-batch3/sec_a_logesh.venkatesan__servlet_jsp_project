@@ -24,28 +24,29 @@
 	rel='stylesheet'>
 
 <style>
+<style>
 #Fixed-position-section {
-	background-color: #d8d8d8;
+
 	height: 47em;
-	width: 60em;
-	margin-left: 7em;
-	position: fixed;
+	width: 50em;
+	margin:auto;
+	
 	overflow-y: scroll;
 }
 
 #post-section {
-	background-color: #d8d8d8;
+	
 	height: 51em;
-	width: 55em;
-	margin-left: 0em;
-	position: relative;
+	width: 45em;
+	margin-left: 2em;
+	
 }
 
 .Likes {
 	display: inline-block;
 	padding: 10px 20px;
 	font-size: 16px;
-	margin-left: 2em;
+	margin-left: 0.4em;
 	border-radius: 5px;
 	text-decoration: none;
 	background-color: #ff0000;
@@ -62,7 +63,7 @@ a.Block {
 	display: inline-block;
 	padding: 10px 20px;
 	font-size: 16px;
-	margin-left: 2em;
+	margin-left: 1em;
 	border-radius: 5px;
 	text-decoration: none;
 	background-color: #ff0000;
@@ -104,6 +105,7 @@ a.Block:hover {
 
 				for (Post post : reversedListOfPost) {
 					int postId = post.getpostId();
+					String s = post.getUserProfile();
 					int likeCount = likeService.getLikeCount(postId);
 					System.out.println("     |      " + postId + "       |       " + likeCount + "        |");
 				%>
@@ -111,7 +113,7 @@ a.Block:hover {
 
 				<div id="solo-post">
 					<div id="profile-post">
-						<img src="<%=request.getContextPath()%>/assest/images/F-icon.jpg"
+						<img src="<%=post.getUserProfile()%>"
 							alt="Profile">
 						<h2 id="profile-name"><%=post.getUsername()%></h2>
 					</div>
@@ -195,19 +197,10 @@ a.Block:hover {
 					<li class="search-box"><i class="bx bx-search icon"></i> <input
 						type="text" placeholder="Search..."></li>
 					<li class="nav-link"><a
-						href="<%=request.getContextPath()%>/assest/pages/Home.html"> <i
+						href="<%=request.getContextPath()%>/home"> <i
 							class="bx bx-home-alt icon"></i> <span class="text nav-text">Home</span>
 					</a></li>
-					<li class="nav-link"><a
-						href="<%=request.getContextPath()%>/assest/pages/chatroom (2).html">
-							<i class="bx bx-chat icon"></i> <span class="text nav-text">Chats</span>
-					</a></li>
-					<li class="nav-link"><a
-						href="<%=request.getContextPath()%>/assest/pages/Byevideo.jsp">
-							<i class="bx bx-play icon"></i> <span class="text nav-text">Videos</span>
-					</a></li>
-					<li class="nav-link"><a
-						href="<%=request.getContextPath()%>/assest/pages/Invite_page.jsp">
+				<li><a href="./assest/pages/Invite_page.jsp">
 							<i class="bx bx-plus icon"></i> <span class="text nav-text">Invite</span>
 					</a></li>
 					<li class="nav-link"><a
@@ -238,33 +231,51 @@ a.Block:hover {
 	</section>
 
 	<script>
-        // Your JavaScript code goes here
-        const body = document.querySelector('body'),
-            section = document.querySelector('section'),
-            sidebar = body.querySelector('nav'),
-            toggle = body.querySelector(".toggle"),
-            searchBtn = body.querySelector(".search-box"),
-            modeSwitch = body.querySelector(".toggle-switch"),
-            modeText = body.querySelector(".mode-text");
 
-        toggle.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
+    // Your JavaScript code goes here
+const body = document.querySelector('body'),
+section = document.querySelector('section'),
+sidebar = body.querySelector('nav'),
+toggle = body.querySelector(".toggle"),
+searchBtn = body.querySelector(".search-box"),
+modeSwitch = body.querySelector(".toggle-switch"),
+modeText = body.querySelector(".mode-text");
 
-        searchBtn.addEventListener("click", () => {
-            sidebar.classList.remove("close");
-        });
+//Check if mode is stored in localStorage
+const storedMode = localStorage.getItem("mode");
 
-        modeSwitch.addEventListener("click", () => {
-            body.classList.toggle("dark");
-            section.classList.toggle("dark");
+//Apply the stored mode or default to light mode
+if (storedMode === "dark") {
+body.classList.add("dark");
+section.classList.add("dark");
+modeText.innerText = "Light mode";
+} else {
+modeText.innerText = "Dark mode";
+}
 
-            if (body.classList.contains("dark")) {
-                modeText.innerText = "Light mode";
-            } else {
-                modeText.innerText = "Dark mode";
-            }
-        });
+toggle.addEventListener("click", () => {
+sidebar.classList.toggle("close");
+});
+
+searchBtn.addEventListener("click", () => {
+sidebar.classList.remove("close");
+});
+
+modeSwitch.addEventListener("click", () => {
+body.classList.toggle("dark");
+section.classList.toggle("dark");
+
+// Update mode in localStorage
+const currentMode = body.classList.contains("dark") ? "dark" : "light";
+localStorage.setItem("mode", currentMode);
+
+// Update mode text
+if (body.classList.contains("dark")) {
+    modeText.innerText = "Light mode";
+} else {
+    modeText.innerText = "Dark mode";
+}
+});
     </script>
 	<%-- <script src="<%=request.getContextPath()%>/library/Sidebar.js"></script> --%>
 

@@ -119,7 +119,7 @@ margin-right: 3em;
 					<li class="search-box"><i class="bx bx-search icon"></i> <input
 						type="text" placeholder="Search..."></li>
 					<li class="nav-link"><a
-						href="<%=request.getContextPath()%>/assest/pages/Home.html"> <i
+						href="<%=request.getContextPath()%>/home"> <i
 							class="bx bx-home-alt icon"></i> <span class="text nav-text">Home</span>
 					</a></li>
 					<%-- <li class="nav-link"><a
@@ -162,32 +162,51 @@ margin-right: 3em;
 
 	<script>
         // Your JavaScript code goes here
-        const body = document.querySelector('body'),
-            section = document.querySelector('section'),
-            sidebar = body.querySelector('nav'),
-            toggle = body.querySelector(".toggle"),
-            searchBtn = body.querySelector(".search-box"),
-            modeSwitch = body.querySelector(".toggle-switch"),
-            modeText = body.querySelector(".mode-text");
+     
+        // Your JavaScript code goes here
+const body = document.querySelector('body'),
+    section = document.querySelector('section'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
 
-        toggle.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
+// Check if mode is stored in localStorage
+const storedMode = localStorage.getItem("mode");
 
-        searchBtn.addEventListener("click", () => {
-            sidebar.classList.remove("close");
-        });
+// Apply the stored mode or default to light mode
+if (storedMode === "dark") {
+    body.classList.add("dark");
+    section.classList.add("dark");
+    modeText.innerText = "Light mode";
+} else {
+    modeText.innerText = "Dark mode";
+}
 
-        modeSwitch.addEventListener("click", () => {
-            body.classList.toggle("dark");
-            section.classList.toggle("dark");
+toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+});
 
-            if (body.classList.contains("dark")) {
-                modeText.innerText = "Light mode";
-            } else {
-                modeText.innerText = "Dark mode";
-            }
-        });
+searchBtn.addEventListener("click", () => {
+    sidebar.classList.remove("close");
+});
+
+modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    section.classList.toggle("dark");
+
+    // Update mode in localStorage
+    const currentMode = body.classList.contains("dark") ? "dark" : "light";
+    localStorage.setItem("mode", currentMode);
+
+    // Update mode text
+    if (body.classList.contains("dark")) {
+        modeText.innerText = "Light mode";
+    } else {
+        modeText.innerText = "Dark mode";
+    }
+});
     </script>
 </body>
 
