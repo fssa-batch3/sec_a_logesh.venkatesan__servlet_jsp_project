@@ -141,19 +141,28 @@ input::placeholder {
         flex-direction: column;
         margin-top: 0em;
     }
+    
+    p.error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #D8000C;
+}
+    
 </style>
-
 <body>
-	<h1 class="title">Register Now</h1>
-	<form class="main-parent "action="create" method="post">
-	 <h1>Create<span>User</span></h1>
-            <input class="input" autofocus id="email" name="email" placeholder="Enter Email" type="email" required /><br>
-            <input class="input" id="name" name="UserName" placeholder="Username" type="text" required /><br>
-            <input class="input" id="password" name="password" placeholder="Set password" type="password" required /><br>
-            <input class="input" id="phnumber" name="mobileno" placeholder="Enter Mobile no"type="number" pattern="[0-9]{1,10}"
-                required /><br><br>
-            <button type="submit" class="btn">Register Now</button>
-	</form>
-
+    <h1 class="title">Register Now</h1>
+   
+    <form class="main-parent "action="create" method="post">
+        <h1>Create<span>User</span></h1>
+        <input class="input" autofocus id="email" name="email" placeholder="Enter Email" type="email" required /><br>
+        <input class="input" id="name" name="UserName" placeholder="Username" type="text" required /><br>
+        <input class="input" id="password" name="password" placeholder="Set password" type="password" required /><br>
+        <input class="input" id="phnumber" name="mobileno" placeholder="@Example12"type="number" pattern="[0-9]{1,10}"
+            required /><br><br>
+        <button type="submit" class="btn">Register Now</button>
+    </form>
 </body>
+
 </html>

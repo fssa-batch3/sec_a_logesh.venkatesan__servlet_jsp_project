@@ -13,13 +13,13 @@
 
       background-repeat: no-repeat;
       background-size: cover;
-      height: 873px;
+      height: 707px;
   }
 
   #HoleCard {
       display: flex;
       flex-direction: row;
-      height: 42em;
+      height: 30em;
       width: 25em;
       border: 0.09px rgb(255, 242, 0) solid;
       border-radius: 2em;

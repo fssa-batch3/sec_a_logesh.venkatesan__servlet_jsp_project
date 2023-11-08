@@ -4,6 +4,8 @@ import java.io.IOException;
 import com.fssa.freshbye.model.*;
 import com.fssa.freshbye.service.*;
 import com.fssa.freshbye.service.exception.ServiceException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,15 +39,25 @@ public class RegistrationServlet extends HttpServlet {
 		user.setPassword(Password);
 		UserService userService = new UserService();
 		try {
-			userService.registerUser(user);
-			String email = request.getParameter("email");
-			System.out.println("Registered User email : "+email);
-			HttpSession session = request.getSession();
-			session.setAttribute(SessionConstants.LOGGED_IN_EMAIL, email);
-			response.sendRedirect(request.getContextPath()+"/home");
+
+			if (userService.registerUser(user)) {
+				String email = request.getParameter("email");
+				System.out.println("Registered User email : " + email);
+				HttpSession session = request.getSession();
+				request.setAttribute("infoMessage", "Successfully Registered");
+				session.setAttribute(SessionConstants.LOGGED_IN_EMAIL, email);
+				response.sendRedirect(request.getContextPath() + "/home");
+			} else {
+				request.setAttribute("errorMessage", "Signup failed");
+				RequestDispatcher dispatcher = request.getRequestDispatcher("/Signup.jsp");
+				dispatcher.forward(request, response);
+			}
+
 		} catch (ServiceException e) {
 			e.printStackTrace();
-			response.sendRedirect(request.getContextPath() + "/Error.jsp?errorMessage=" + e.getMessage());
+			request.setAttribute("errorMessage", e.getMessage());
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/Signup.jsp");
+			dispatcher.forward(request, response);
 		}
 	}
 }
